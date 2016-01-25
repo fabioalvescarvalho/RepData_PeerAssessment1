@@ -191,6 +191,8 @@ head(data.impute)
 
 wk.df <- aggregate(steps ~ wk + interval, data=data.impute, FUN=mean)
 
+
+
 library(lattice)
 
 xyplot(steps ~ interval | factor(wk),
